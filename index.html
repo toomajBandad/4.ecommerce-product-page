@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body class="mainBody">
+    <section class="navbar-Section">
+      <div class="navbar-wrapper">
+        <div class="navbar-left">
+          <div class="navbar-logoContainer">
+            <img class="hamburger-icon" src="./images/icon-menu.svg" />
+            <img src="./images/logo.svg" />
+          </div>
+          <div class="navbar-menuContainer">
+            <ul class="navbar-menuItems">
+              <li class="navbar-menuItem">Collections</li>
+              <li class="navbar-menuItem">Men</li>
+              <li class="navbar-menuItem">Women</li>
+              <li class="navbar-menuItem">About</li>
+              <li class="navbar-menuItem">Contact</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navbar-right">
+          <div class="navbar-basketContainer">
+            <img class="basketImg" src="./images/icon-cart.svg" />
+            <span class="basket-badge"></span>
+          </div>
+          <div class="navbar-userImgContainer">
+            <img class="navbar-userImg" src="./images/image-avatar.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mainHome-Body">
+      <div class="mainHome-left">
+        <div class="mainFotoContainer">
+          <img class="mainFoto" src="./images/image-product-1.jpg" />
+        </div>
+        <div class="galleryContainer">
+          <img
+            class="galleryItem activeGallery"
+            src="./images/image-product-1-thumbnail.jpg"
+            name="product-1"
+          />
+          <img
+            class="galleryItem"
+            src="./images/image-product-2-thumbnail.jpg"
+            name="product-2"
+          />
+          <img
+            class="galleryItem"
+            src="./images/image-product-3-thumbnail.jpg"
+            name="product-3"
+          />
+          <img
+            class="galleryItem"
+            src="./images/image-product-4-thumbnail.jpg"
+            name="product-4"
+          />
+        </div>
+      </div>
+
+      <div class="mainHome-right">
+        <div class="companyName">SNEAKER COMPANY</div>
+        <div class="right-title">Fall Limited Edition Sneakers</div>
+        <div class="right-text"
+          >These low-profile sneakers are your perfect casual wear
+          companion.Featuring a durable rubber outer sole, they’ll widthstand
+          everything the weather can offer.
+        </div>
+        <div class="valueBar">
+          <div class="finalValue">$125.00</div>
+          <div class="offPercent">50%</div>
+        </div>
+        <div class="firstValue">$250.00</div>
+        <div class="countBar">
+          <div class="Plus-Minus">
+            <img class="minus-icon" src="./images/icon-minus.svg" />
+            <div class="count">0</div>
+            <img class="plus-icon" src="./images/icon-plus.svg" />
+          </div>
+          <button class="addToCartBtn"
+            ><img class="addToCartIcon" src="./images/icon-cart.svg" />Add to
+            cart</button
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="lightBox-section">
+      <div class="gallery-container">
+        <img class="closeThumbBtn" src="./images/icon-close.svg" />
+        <div class="mainFoto-container">
+          <button class="prevBtn" onclick="prevGallery(event)"
+            ><img src="./images/icon-previous.svg"
+          /></button>
+          <img class="mainFoto-lightBox" src="./images/image-product-1.jpg" />
+          <button class="nextBtn" onclick="nextGallery(event)"
+            ><img class="thisis" src="./images/icon-next.svg"
+          /></button>
+        </div>
+        <div class="thumbNail-container">
+          <img
+            class="thumbNailImg active"
+            src="./images/image-product-1-thumbnail.jpg"
+          />
+          <img
+            class="thumbNailImg"
+            src="./images/image-product-2-thumbnail.jpg"
+          />
+          <img
+            class="thumbNailImg"
+            src="./images/image-product-3-thumbnail.jpg"
+          />
+          <img
+            class="thumbNailImg"
+            src="./images/image-product-4-thumbnail.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-section nodisplay">
+      <div class="cart-container">
+        <div class="cart-title">Cart</div>
+        <div class="cartItems-container">
+          Your cart is empty
+          <!-- <div class="cartItem">
+            <img class="cartItem-image" src="./images/image-product-3-thumbnail.jpg"/>
+            <div class="cartItem-text">
+              <p>Fall limited edition sneakers</p>
+              <p>$125 * 3 <span class="cartPayAmount">$375</span> </p>
+            </div>
+            <button class="cartItem-removeBtn"><img class="removeBtnIcon" onclick="removeItem(event)" src="./images/icon-delete.svg"/></button>
+          </div> -->
+        </div>
+        <button class="cartCheckBtn">Checkout</button>
+      </div>
+    </section>
+
+    <section class="mobile-menu">
+      <img class="mobile-menu-close" src="./images/icon-close.svg" />
+      <ul class="mobile-menu-wrapper">
+        <li class="mobile-menu-item">Collections</li>
+        <li class="mobile-menu-item">Men</li>
+        <li class="mobile-menu-item">Women</li>
+        <li class="mobile-menu-item">About</li>
+        <li class="mobile-menu-item">Contact</li>
+      </ul>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<!-- Collections Men Women About Contact Sneaker Company Fall Limited Edition
+    Sneakers These low-profile sneakers are your perfect casual wear companion.
+    Featuring a durable rubber outer sole, they’ll withstand everything the
+    weather can offer. $125.00 50% $250.00 0 Add to cart -->
